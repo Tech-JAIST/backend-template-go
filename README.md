@@ -1,7 +1,7 @@
 # backend-template-go
 JAIST Techサークルのバックエンドテンプレート(Go)です。
 
-# Tasks
+## Tasks
 
 開発に用いるコマンド一覧
 
