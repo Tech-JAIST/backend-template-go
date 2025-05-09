@@ -45,12 +45,27 @@ golangci-lintを実行します。
 golangci-lint run --fix ./...
 ```
 
+### lint_with_docker
+
+golangci-lintのdockerイメージをpullしてlinterを実行します。
+```sh
+docker run --rm -v $(pwd):/app -w /app golangci/golangci-lint:v2.1.6-alpine golangci-lint run --fix ./...
+```
+
 ### format
 
 golangci-lintでformatを実行します。
 
 ```sh
 golangci-lint fmt ./...
+```
+
+### format_with_docker
+
+golangci-lintのdockerイメージをpullしてformatを実行します。
+
+```sh
+docker run --rm -v $(pwd):/app -w /app golangci/golangci-lint:v2.1.6-alpine golangci-lint fmt ./...
 ```
 
 ## References
