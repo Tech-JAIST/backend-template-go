@@ -20,4 +20,4 @@
 Docker EngineはLinuxカーネルの元に成り立っているため、Windows, macOSではLinuxをVMなどで立ち上げる必要があります。(メモリをたくさん消費する理由がこれ)
 Docker Desktop, OrbStackなどを用いてLinux VMを立ち上げ、CLIからはVMを介してDocker Engineを使う方法だったり、WSLでLinux OSを立ち上げて、その中でDocker Engineをインストールして直接使う方法だったりがあります。
 WSLの設定は面倒くさい(個人的意見)ので一つのソフトウェアで完結するDocker Desktop、OrbStackをインストールすることで解決しています。
-https://zenn.dev/skrikzts/articles/55f7744ee82aa9
+[参考記事: Windows PC上でDocker Desktopを利用してLinuxの開発環境を構築するまでの仕組み](https://zenn.dev/skrikzts/articles/55f7744ee82aa9)
