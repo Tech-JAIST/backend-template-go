@@ -8,10 +8,11 @@ import (
 )
 
 func MigrateTables(db *gorm.DB) error {
-	err:=db.AutoMigrate(InitialTables()...)
+	err := db.AutoMigrate(InitialTables()...)
 	if err != nil {
 		return err
 	}
+
 	return gormigrate.New(db, gormigrate.DefaultOptions, Migrations()).Migrate()
 }
 

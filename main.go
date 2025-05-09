@@ -2,9 +2,9 @@ package main
 
 import (
 	"backend/internal/config"
+	"backend/internal/db/migration"
 	"backend/internal/handler"
 	"backend/internal/repository"
-	"backend/internal/db/migration"
 
 	"github.com/labstack/echo/v4"
 	"github.com/labstack/echo/v4/middleware"
