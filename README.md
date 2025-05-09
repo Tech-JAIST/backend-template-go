@@ -13,6 +13,15 @@ JAIST Techサークルのバックエンドテンプレート(Go)です。
 > go install github.com/joerdav/xc/cmd/xc@latest
 > ```
 
+### build
+
+アプリをビルドします。
+
+```sh
+go mod download
+go build -o ./$(basename $PWD)
+```
+
 ### dev
 
 ホットリロードの開発環境を構築します。
