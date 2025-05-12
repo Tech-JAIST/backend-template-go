@@ -1,6 +1,11 @@
 # backend-template-go
 JAIST Techサークルのバックエンドテンプレート(Go)です。  
 
+## 開発の進め方
+1. [プロジェクト作成方法](#プロジェクト作成方法)に従ってプロジェクトを作成する
+2. [Tools](#Tools)のうち、必要なツールをインストール
+3. [実装方法](docs/implement.md)に従って開発を進める
+
 ## プロジェクト作成方法
 ### CLI
 ```sh
@@ -18,11 +23,11 @@ gonew github.com/Tech-JAIST/backend-template-go {{ project_name }}
 ex: `github.com/Tech-JAIST/hackathon-project1`
 
 ## Tools
-### VSCode
+### エディタ(必須)
 エディタはVSCode、もしくはそのフォークであるCursorを推奨しています。  
 拡張機能として、`Go`をインストールしてください。  
 
-### Docker
+### Docker(必須)
 [公式ページ](https://www.docker.com/)
 仮想環境を立ち上げるために必要です。  
 インストール方法は[こちら](docs/docker.md)を参考にしてください。  
