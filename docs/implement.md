@@ -1,5 +1,15 @@
 # 実装方法
 ## 前提知識
+### 使用している外部パッケージ
+#### gorm
+GoのORMです。DB操作に使っています。
+
+[documentation](https://gorm.io/index.html)
+#### echo
+GoのWebフレームワークです。
+
+[documentation](https://echo.labstack.com/docs/quick-start)
+
 ### ディレクトリ構造
 ディレクトリ構造は以下のようになっています。
 ```sh
