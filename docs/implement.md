@@ -9,7 +9,6 @@ GoのORMです。DB操作に使っています。
 GoのWebフレームワークです。
 
 [documentation](https://echo.labstack.com/docs/quick-start)
-
 ### ディレクトリ構造
 ディレクトリ構造は以下のようになっています。
 ```sh
