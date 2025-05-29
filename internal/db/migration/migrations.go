@@ -5,6 +5,7 @@ import (
 	"errors"
 
 	"github.com/go-gormigrate/gormigrate/v2"
+	"github.com/google/uuid"
 	"gorm.io/gorm"
 )
 
@@ -17,7 +18,7 @@ func v1() *gormigrate.Migration {
 			}
 
 			return db.Create(&model.User{
-				ID:   "0d9a2f49-99aa-49e6-bcf6-b123953aca63",
+				ID:   uuid.MustParse("0d9a2f49-99aa-49e6-bcf6-b123953aca63"),
 				Name: "root",
 			}).Error
 		},

@@ -25,12 +25,8 @@ func (h *Handler) GetUsers(c echo.Context) error {
 
 	res := make(GetUsersResponse, len(users))
 	for i, user := range users {
-		userID, err := uuid.Parse(user.ID)
-		if err != nil {
-			return echo.NewHTTPError(http.StatusInternalServerError).SetInternal(err)
-		}
 		res[i] = GetUserResponse{
-			ID:   userID,
+			ID:   user.ID,
 			Name: user.Name,
 		}
 	}
